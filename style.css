@@ -4,17 +4,15 @@
     font-family: 'Itim', cursive;
 }
 
-.background {
+body {
     background-color: #13191c;
-    height: 100vh;
-    padding-top: 1px;
 }
 
 .title {
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .display {
@@ -30,6 +28,7 @@
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -39,6 +38,7 @@
 }
 
 .tile {
+
     border: 1px solid white;
     min-width: 100px;
     min-height: 100px;
@@ -73,8 +73,12 @@
     font-size: 20px;
     margin-left: 1em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#reset:hover {
+    background-color: #ff3cfc;
+}
 .restart {
     background-color: #498AFB;
 }
